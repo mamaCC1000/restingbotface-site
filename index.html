@@ -11,7 +11,7 @@
 .scp1:hover { background: rgb(181, 69, 27); }
 .scp3:hover { background: rgb(31, 25, 19); }
 .scp4:hover { background: rgba(23, 18, 14, 0.03); }
-.scp5:hover { border-bottom-color: rgb(181, 69, 27); }
+.scp6:hover { background: rgb(23, 18, 14); }
 .work-grid { grid-template-columns: 1fr; }
 @media (min-width: 640px) { .work-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 980px) { .work-grid { grid-template-columns: repeat(4, 1fr); } }</style><style>@font-face { font-family: "Alfa Slab One"; font-style: normal; font-weight: 400; font-display: swap; src: url("assets/41aab159-99fd-43dc-aae6-6fb89c311121.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
@@ -227,7 +227,30 @@ body { background: rgb(246, 241, 231); }
       </div>
       <div style="font-size: 14px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(181, 69, 27);">Say hello</div>
       <h2 style="font-family: &quot;Alfa Slab One&quot;, serif; font-weight: 400; font-size: clamp(30px, 5.5vw, 66px); line-height: 1.02; margin-top: 24px; text-wrap: balance;">Got something worth<br>building? Let's talk.</h2>
-      <a href="https://restingbotface.net" class="scp5" style="display: inline-block; margin-top: 40px; font-family: &quot;Alfa Slab One&quot;, serif; font-size: clamp(22px, 4vw, 38px); color: rgb(181, 69, 27); text-decoration: none; border-bottom: 3px solid transparent;">restingbotface.net</a>
+      <div style="margin-top: 40px; font-family: &quot;Alfa Slab One&quot;, serif; font-size: clamp(22px, 4vw, 38px); color: rgb(181, 69, 27);">restingbotface.dev</div>
+
+      <form method="POST" action="https://contact-form-production-ec34.up.railway.app/" style="margin-top: 40px; max-width: 480px; margin-left: auto; margin-right: auto; text-align: left; display: flex; flex-direction: column; gap: 18px;">
+        <div style="position: absolute; width: 1px; height: 1px; overflow: hidden; left: -9999px;" aria-hidden="true">
+          <label for="contact-company">Company</label>
+          <input type="text" id="contact-company" name="company" tabindex="-1" autocomplete="off">
+        </div>
+        <input type="hidden" name="ts" id="contact-ts" value="">
+
+        <div>
+          <label for="contact-name" style="display: block; font-size: 13px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: rgba(246, 241, 231, 0.62); margin-bottom: 8px;">Name</label>
+          <input type="text" id="contact-name" name="name" required style="width: 100%; padding: 14px 16px; border-radius: 10px; border: 1px solid rgba(246, 241, 231, 0.2); background: rgba(246, 241, 231, 0.06); color: rgb(246, 241, 231); font-size: 16px; font-family: &quot;Work Sans&quot;, sans-serif; box-sizing: border-box;">
+        </div>
+        <div>
+          <label for="contact-email" style="display: block; font-size: 13px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: rgba(246, 241, 231, 0.62); margin-bottom: 8px;">Email</label>
+          <input type="email" id="contact-email" name="email" required style="width: 100%; padding: 14px 16px; border-radius: 10px; border: 1px solid rgba(246, 241, 231, 0.2); background: rgba(246, 241, 231, 0.06); color: rgb(246, 241, 231); font-size: 16px; font-family: &quot;Work Sans&quot;, sans-serif; box-sizing: border-box;">
+        </div>
+        <div>
+          <label for="contact-message" style="display: block; font-size: 13px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: rgba(246, 241, 231, 0.62); margin-bottom: 8px;">Message</label>
+          <textarea id="contact-message" name="message" required rows="4" style="width: 100%; padding: 14px 16px; border-radius: 10px; border: 1px solid rgba(246, 241, 231, 0.2); background: rgba(246, 241, 231, 0.06); color: rgb(246, 241, 231); font-size: 16px; font-family: &quot;Work Sans&quot;, sans-serif; box-sizing: border-box; resize: vertical;"></textarea>
+        </div>
+        <button type="submit" class="scp6" style="align-self: center; margin-top: 8px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-size: 16px; font-weight: 600; color: rgb(246, 241, 231); background: rgb(181, 69, 27); text-decoration: none; padding: 16px 36px; border-radius: 100px; border: none; cursor: pointer; font-family: &quot;Work Sans&quot;, sans-serif;">Send message</button>
+      </form>
+      <script>document.getElementById('contact-ts').value = Date.now();</script>
     </div>
   </section>
 
